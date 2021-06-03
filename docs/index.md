@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# ifcJSON-4
+This repository contains the specification for ifcJSON-4 - version in sync with IFC EXPRESS Schema.
 
-You can use the [editor on GitHub](https://github.com/IFCJSON-Team/ifcJSON/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## What
+JSON is used throughout the world for exchanging and using data. Building data needs to be available in JSON. Therefore, IFC needs to be available in JSON format. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ifcJSON aims primarily at addressing the following problems with IFC:
+1. Many developers have never seen/used EXPRESS or STP instance files before, which increases the effort required to extract data required from them. 
+2. IFC instance populations are typically exchanged as files, which is at odds with linked, distributed, and rapidly changing data seen on most design and construction projects and products.
 
-### Markdown
+ifcJSON seeks the best balance between a best practice JSON representation AND compatibility with the IFC source schema.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Main focus:
+- Backward compatibility
+- Round-trip
+- Parallel to EXPRESS schema
 
-```markdown
-Syntax highlighted code block
+To a lesser degree (Due to adhering to the IFC schema):
+- Human-readability
+- Integration with code
+- Clear referencing structure
+- Direct usability
 
-# Header 1
-## Header 2
-### Header 3
+The initial standard will be developed based on IFC4 and more specifically IFC4.3.
+IFC5 developments will be closely followed, especially for expected improvements in human-readability.
 
-- Bulleted
-- List
+## Getting started
+The repository is organised in different sections:
+- [Documentation](Documentation): your starting point to find out what this ifcJSON is about
+- [Samples](Samples): ifcJSON data examples
+- [Schema](Schema): ifcJSON schemas
+- [File converters](file_converters): Python tools for reading and converting between ifcJSON and IFC SPF
+- [Schema converters](schema_converters): Python tools for converting IFC schemas into JSON-Schema
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IFCJSON-Team/ifcJSON/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## More information
+Contributions are welcome in all possible ways. Your first starting point is creating GitHub issues. Feel free to get in touch with the people in the ifcJSON-team.
